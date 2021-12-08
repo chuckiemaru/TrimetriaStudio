@@ -1,0 +1,112 @@
+:root
+{
+    --dark-grey: #262626;
+    --medium-grey: #333333;
+    --light-grey: #F2F2F2;
+    --red: #8C0303;
+    --dark-red: #590404;
+}
+
+*
+{
+   box-sizing: border-box; 
+   margin: 0;
+   padding: 0;
+}
+
+html
+{
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    align-items: center;
+
+    background: rgb(255,255,255);
+    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgb(226, 226, 226) 100%);
+}
+
+header
+{
+   height: 72px;
+   width: 100%;
+   display: grid;
+   grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+   place-items: center;
+   padding: 12px;
+}
+
+header .logos
+{
+    min-width: auto;
+    height: 56px;
+    margin-top: 0;
+    padding: 0;    
+    justify-items: start;
+}
+
+header h1
+{
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--dark-red);
+}
+
+.icons
+{
+    width: 28px;
+    height: 28px;
+}
+
+main
+{
+    display: grid;
+    grid-template-rows: 30% 10% 10% 10%;
+    grid-template-columns: auto;
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 16px auto;
+}
+
+.renders
+{
+    width: 420px;
+    height: auto;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+article .cards-container
+{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.cards-container h1
+{
+    text-align: center;
+    color: var(--dark-red);
+    font-size: 1.8rem;
+}
+
+h2
+{
+    text-align: center;
+    font-weight: 500;
+    color: var(--dark-grey);
+}
+
+.material_muebles
+{
+    background-image: url(/assets/img/kitchen_white-1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 420px;
+    height: 240px;
+    margin: 0 auto;
+}
