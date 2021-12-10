@@ -12,35 +12,108 @@
 </head>
 <body>
     <header>
-            <img class="logos" src="./assets/icons/svg/logo_red.svg">
-            <h1>TRIMETRÍASTUDIO</h1>
-            <span class="icons" href="https://www.instagram.com/trimetriastudio/?hl=es"><img src="/assets/icons/svg/tik_red.svg" alt="Tik Tok icono"></span>
-            <span class="icons" href="https://www.instagram.com/trimetriastudio/?hl=es"><img src="/assets/icons/svg/insta_red.svg" alt="Instagram icono"></span>
-            <span class="icons" href="https://www.facebook.com/trimetriastudio/"><img src="/assets/icons/svg/face_red.svg" alt="Facebook icono"></span>
+            <img class="logos" src="./assets/icons/svg/logo-text_white-3.svg">
+            <div class="icons-container">
+                <span class="icons" href="https://www.instagram.com/trimetriastudio/?hl=es"><img src="/assets/icons/svg/tik_white.svg" alt="Tik Tok icono"></span>
+                <span class="icons" href="https://www.instagram.com/trimetriastudio/?hl=es"><img src="/assets/icons/svg/insta_white.svg" alt="Instagram icono"></span>
+                <span class="icons" href="https://www.facebook.com/trimetriastudio/"><img src="/assets/icons/svg/face_white.svg" alt="Facebook icono"></span>
+            </div>            
+            <h2>Cotizar con nosotros es fácil y rápido.</h2>
     </header>
     <main>
-        <section class="top-main">
-            <img class="renders" src="./assets/img/kitchen_white-1.png" alt="Imagen de cocina blanca">
+        <section class="cards-container">
+            <h3>Primero definamos los materiales <br> de los muebles.</h3>
+            <img src="./assets/img/materiales_01.png" alt="imagen de una pieza de plywood">
+            <p>Nosotros trabajamos melamina, MDF, plywood, madera de pino y laurel.</p>
+            <p>Para no elevar innecesariamente, recomendamos dejar los interiores en gris claro u oscuro, y los frentes de gavetas y puertas en el tono de su preferencia.</p>
         </section>
-        <Article class="cards-container">
-            <h1>El diseño de tus sueños. <br> Cotizalo con nosotors.</h1>
-            <Section class="cards">
-                <h2>¡Primero!</h2>
-                <div class="material_muebles"></div>
-                <h2>¿Qué material piensas para tus muebles?</h2>
-                <h2>Ofecemos melamina, MDF y Madera.</h2>
-                <h2>Para no aumentar inncesariamente el precio de los muebles <br>siempre recomendamos melamina gris o gris oscuro para los interiores.</h2>
-            </Section>
-            <section class="cards">
-
-            </section>
-            <section class="cards">
-
-            </section>
-        </Article>
+        <section class="cards-container">
+            <h3>Ahora el material <br> del sobre</h3>
+            <img src="./assets/img/materiales_01.png" alt="imagen de una pieza de plywood">
+            <p>El granito de diseño manchado, tiene un mayor grado de resistencia a altas temperaturas.</p>
+            <p>El cuarzo de diseños variados, tiene un costo un poco mas elevado, pero sus tonos extremadamente elegantes.</p>
+            <p>Si tiene imágenes del estilo que tiene en mente mucho mejor.</p>
+        </section>
+        <section class="cards-container">
+            <h3>El punto mas importante <br>las medidas en sitio.</h3>
+            <img src="./assets/img/materiales_01.png" alt="imagen de una pieza de plywood">
+            <p>Midamos por separado las paredes donde irán instalados los muebles bajos y muebles altos. No siempre podemos colocar muebles bajos y altos en la misma área de una pared, ya sea por obstáculos o por diseños</p>
+            <p>Medir incorrectamente todo elevaría innecesariamente el presupuesto.</p>
+            <p>Medir por separado los electrodomésticos, importante tener en cuenta que: <br>si la cocina es un electrodoméstico completo no la debemos incluir en las medidas finales de muebles, si es plantilla si debemos realizar un mueble que la contenga.</p>
+        </section>
+        <section class="cards-container">
+            <h3>Por ultimo pero no menos importante <br>tiene que indicarnos <br>¿donde está ubicado el proyecto?</h3>
+            <img src="./assets/img/materiales_01.png" alt="imagen de una pieza de plywood">
+            <p>La logistica de transportar muebles de tamaño pequeños, medianos o grandes depende mucho del sitio donde estará ubicado el proyecto. <br>Este detalle es de suma importancia para administrar correctamente los recursos.</p>
+        </section>
+        <section class="cards-container">
+            <h3>Por alguna razón no tiene uno de estos detalles o bien prefiere una reunión en persona.</h3>
+            <p>No hay ningún problema, llene el siguiente formulario y nos pondremos en contacto con usted lo antes posible.</p>
+            <input class="medidas" type="text" name="Nombre y Apellido" id="Nombre" placeholder="Ingrese su nombre y apellido">
+           <input class="medidas" type="number" name="contacto" id="contacto" placeholder="Ingrese su whatsapp">
+           <input class="input-button" type="submit" value="Enviar">
+        </section>
+        <form class="forms-container">
+            <h3>En el siguiente formulario podrás indicarnos <br>todos los detalles que necesitamos saber para <br>realizar una cotización rápida.</h3>
+            <input type="text" name="Nombre y Apellido" id="Nombre" placeholder="Ingrese su nombre y apellido">
+           <input type="number" name="contacto" id="contacto" placeholder="Ingrese su whatsapp">
+           <div>
+            <p>Seleccione el material que desea para los interiores de los muebles</p>
+            <label for="categoria"></label>
+            <select name="categoria" id="">
+                <option value="Melamina">Melamina</option>
+                <option value="Plywood">Plywood</option>
+                <option value="Madera">Madera</option>
+            </select>
+           </div>
+           <div>
+            <p>Seleccione el material que desea para los exteriores de los muebles.</p>
+            <label for="categoria"></label>
+            <select name="categoria" id="">
+                <option value="Melamina">Melamina</option>
+                <option value="MDF">MDF</option>
+                <option value="Plywood">Plywood</option>
+                <option value="Madera">Madera</option>
+            </select>
+           </div>
+           <div>
+            <p>Seleccione el material que desea el sobre de los muebles.</p>
+            <label for="categoria"></label>
+            <select name="categoria" id="">
+                <option value="Granito">Granito</option>
+                <option value="cuarzo">Cuarzo</option>
+            </select>
+           </div>
+           <div>
+            <p>Indíquenos las medidas calculadas para muebles bajos.</p>
+            <input class="medidas" type="number">
+            <label for="medidas"></label>
+            <select class="medidas" name="medidas" id="">
+                <option value="Metros">Metros</option>
+                <option value="Centímetros">Centímetros</option>
+                <option value="Pulgadas">Pulgadas</option>
+            </select>
+           </div>
+           <div>
+            <p>Indíquenos las medidas calculadas para muebles aéreos.</p>
+            <input class="medidas" type="number">
+            <label for="medidas"></label>
+            <select class="medidas" name="medidas" id="">
+                <option value="Metros">Metros</option>
+                <option value="Centímetros">Centímetros</option>
+                <option value="Pulgadas">Pulgadas</option>
+            </select>
+           </div>
+           <input class="input-button" type="submit" value="Enviar">
+        </form>
     </main>
     <footer>
-
+        <p>Nuestros talleres están ubicados en Poas Alajuela.</p>
+        <div class="icons-container">
+            <span class="icons" href="https://www.instagram.com/trimetriastudio/?hl=es"><img src="/assets/icons/svg/tik_white.svg" alt="Tik Tok icono"></span>
+            <span class="icons" href="https://www.instagram.com/trimetriastudio/?hl=es"><img src="/assets/icons/svg/insta_white.svg" alt="Instagram icono"></span>
+            <span class="icons" href="https://www.facebook.com/trimetriastudio/"><img src="/assets/icons/svg/face_white.svg" alt="Facebook icono"></span>
+        </div>  
     </footer>
 </body>
 </html>

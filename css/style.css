@@ -2,7 +2,7 @@
 {
     --dark-grey: #262626;
     --medium-grey: #333333;
-    --light-grey: #F2F2F2;
+    --light-grey: #fdfdfd;
     --red: #8C0303;
     --dark-red: #590404;
 }
@@ -20,93 +20,216 @@ html
     font-family: 'Montserrat', sans-serif;
     justify-content: center;
     align-items: center;
-
-    background: rgb(255,255,255);
-    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgb(226, 226, 226) 100%);
 }
 
 header
 {
-   height: 72px;
+   height: 400px;
    width: 100%;
    display: grid;
-   grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
    place-items: center;
-   padding: 12px;
+   padding: 0;
+   background: url(../assets/img/kitchen_white-1.png);
+   background-repeat: no-repeat;
+   background-size: auto 100%;
+   background-position: center 0;
+   border-bottom: 42px solid var(--red);
 }
 
 header .logos
 {
     min-width: auto;
-    height: 56px;
+    height: 240px;
     margin-top: 0;
     padding: 0;    
     justify-items: start;
+    
 }
 
-header h1
+
+.icons-container
 {
-    text-align: center;
-    font-size: 2.4rem;
-    font-weight: 700;
-    color: var(--dark-red);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    height: auto;
+    margin: 0;
 }
 
 .icons
 {
     width: 28px;
     height: 28px;
+    margin: 0 auto;
+}
+
+header h2
+{
+    position: relative;
+    color: var(--light-grey);
+    font-weight: 600;
+    justify-self: center; 
+    text-align: center;
+    margin: 0 auto;
+    bottom: -50px;
+    font-size: 1.8rem;
 }
 
 main
 {
-    display: grid;
-    grid-template-rows: 30% 10% 10% 10%;
-    grid-template-columns: auto;
-    width: 95%;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    justify-items: center;
-    margin: 16px auto;
+    align-items: center;
+    background-color: rgb(241, 241, 241);
 }
 
-.renders
+.cards-container
 {
-    width: 420px;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    width: 95%;
     height: auto;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px 16px 0 16px;
+    background-color: var(--light-grey);
+    border-radius: 25px;
+    -webkit-box-shadow: 5px 8px 29px -5px rgba(0,0,0,0.5); 
+    box-shadow: 5px 8px 29px -5px rgba(0,0,0,0.5);
+    font-size: 1.4rem;
 }
 
-article .cards-container
+.cards-container h3
+{
+    color: var(--dark-red);
+    font-weight: 650;
+    text-align: center;
+    justify-self: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin: 16px;
+}
+
+main img
+{
+    width: 100px;
+    height: auto;
+    margin: 16px;
+}
+
+.cards-container p
+{
+    font-size: 1.6rem;
+    margin-top: 16px;
+    color: var(--medium-grey);
+    margin: 16px;
+}
+
+.forms-container
+{
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    width: 95%;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px 16px 0 16px;
+    background-color: var(--light-grey);
+    border-radius: 25px;
+    -webkit-box-shadow: 5px 8px 29px -5px rgba(0,0,0,0.5); 
+    box-shadow: 5px 8px 29px -5px rgba(0,0,0,0.5);
+    font-size: 1.4rem;
+}
+
+.forms-container h3
+{
+    color: var(--dark-red);
+    font-weight: 650;
+    text-align: center;
+    justify-self: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin: 16px;
+}
+
+.forms-container p
+{
+    font-size: 1.6rem;
+    margin-top: 16px;
+    color: var(--medium-grey);
+    margin: 16px;
+}
+
+.forms-container input
 {
     width: 90%;
-    height: auto;
+    height: 32px;
+    margin: 8px;
+    margin: 8px auto;
+}
+
+.forms-container .medidas
+{
+    width: 40%;
+    height: 32px;
+    margin: 8px;
+}
+.cards-container .medidas
+{
+    width: 90%;
+    height: 32px;
+    margin: 8px;
+}
+
+.forms-container select
+{
+    width: 90%;
+    height: 32px;
+    align-self: center;
+    justify-self: center;
     margin: 0 auto;
 }
 
-.cards-container h1
+.forms-container .input-button
 {
-    text-align: center;
-    color: var(--dark-red);
-    font-size: 1.8rem;
+    width: 90%;
+    height: 40px;
+    border: none;
+    background-color: yellowgreen;
+    border-radius: 4px;
+}
+.cards-container .input-button
+{
+    width: 90%;
+    height: 40px;
+    border: none;
+    background-color: yellowgreen;
+    border-radius: 4px;
 }
 
-h2
+footer
 {
-    text-align: center;
-    font-weight: 500;
-    color: var(--dark-grey);
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-red);
+    margin-top: 16px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
 }
 
-.material_muebles
+footer p
 {
-    background-image: url(/assets/img/kitchen_white-1.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 420px;
-    height: 240px;
+    color: var(--light-grey);
+    font-weight: 600;
+    justify-self: center; 
+    text-align: center;
     margin: 0 auto;
+    font-size: 1.6rem;
 }
